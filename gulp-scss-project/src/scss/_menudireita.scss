@@ -1,0 +1,134 @@
+.menu-direita {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $primary-color;
+    display: flex;
+    height: 100%;
+    width: 422px;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    transition: right 0.3s ease-in-out;
+
+    &.fechar{
+        right: -422px;
+    }
+
+    .conteudo-direita {
+        padding: 50px;
+        width: 308px;
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        &__perfil{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+        &__sangue {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #E8F1F9;
+            border-radius: 30px;
+            height: 76px;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+
+            &-coluna {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0 25px;
+
+                &:not(:first-child) {
+                    border-left: 1px solid #ccc;
+                    height: 54px;
+                }
+            }
+
+
+            &-titulo {
+                font-size: 14px;
+                color: #777;
+            }
+
+            &-valor {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+        &__calendario {
+            background-color: rgb(255, 255, 255);
+            margin-top: 20px;
+        }
+
+        &__match {
+            background-color: #4263EB;
+            color: #fff;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 15px;
+            position: relative;
+            background-image: url('../img/medal.png');
+            background-repeat: no-repeat;
+            background-position: 150px 00px;
+        
+            &-textos {
+                display: flex;
+                flex-direction: column;
+                margin-left: 20px;
+            }
+            h4{
+                margin-top: -10px;
+                margin-bottom: -10px;
+            }
+
+
+
+
+            hr {
+                width: 90%;
+                border: none;
+                border-top: 1px solid rgba(255, 255, 255, 0.5); 
+            }
+        
+            &-imagens {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding-left: 15px;
+            }
+        
+        }
+        &__health{
+            background-color: #E8F1F9;
+            height: 182px;
+            border-radius: 20px;
+            margin-top: 25px;
+            background-image: url('../img/caduceus.png');
+            background-repeat: no-repeat;
+            background-position: 160px 65px;
+        }
+        &__meditation{
+            background-color: #E8F1F9;
+            border-radius: 20px;
+            margin-bottom: 100px;
+            background-image: url('../img/flor.png');
+            background-repeat: no-repeat;
+            background-position: 160px 00px;
+
+        }
+
+    }
+}

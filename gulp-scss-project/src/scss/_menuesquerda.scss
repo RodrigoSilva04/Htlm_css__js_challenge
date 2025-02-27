@@ -1,0 +1,78 @@
+.menu-lateral{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 112px;
+    background-color: $menucolor;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 20px 20px 0;
+
+    &.aberto{
+        width: 212px;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .menu-topo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        .item_menu{
+            color: rgb(255, 255, 255);
+            padding: 10px;
+        }
+    }
+    
+
+    .items_menu{
+        display: flex;
+        flex-direction: column;
+        color: $primary-color;
+        padding: 10px;
+        
+
+    
+        .item_menu{
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            &:hover{
+                background-color: $menubackground;
+                border-radius: 12px;
+                color: $menucolor;
+            }
+            i{
+                color: $primary-color;
+            }
+
+            span{
+                display: none;
+
+                &.aberto{
+                    display: inline-block;
+                    transition: display 0.3s ease-in-out;
+                    color: white;
+                    text-size-adjust: 20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .item_menu:last-child{
+            align-self: center;
+            margin-top: 400px;
+        }
+        .item_menu:nth-child(1){
+            margin-top: 050px;
+        }
+        
+    }
+    
+    
+}

@@ -1,0 +1,47 @@
+@import './variables';
+@import './conteudo';
+@import './menudireita';
+@import './menuesquerda';
+body{
+    background-color: $background-color;
+    z-index: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.botao-seta {
+    background-color: rgb(253, 253, 253);
+    height: 100px;
+    width: 80px;
+    position: fixed;
+    right: 370px;
+    top: 20%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    z-index: 1; 
+    transition: right 0.3s ease-in-out;
+    i{
+        color: purple;
+        margin-right: 37px;
+    }
+    &.fechar{
+        right: -30px;
+
+        i{
+            transform: rotate(180deg);
+            transition: all 0.3s ease-in-out;
+        }
+
+    }
+}
+
