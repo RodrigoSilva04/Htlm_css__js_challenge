@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .conteudo {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px 0px 0px 200px;
@@ -9,7 +10,7 @@
   background-color: #e8f1f9;
 }
 .conteudo.fechar {
-  margin-left: 412px;
+  margin-left: 112px;
   transition: all 0.3s ease-in-out;
 }
 .conteudo.aberto {
@@ -56,15 +57,28 @@
 }
 .conteudo .search-bar {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background-color: #eaf2fa;
-  border-radius: 20px;
-  padding: 10px 15px;
-  width: 100%;
-  max-width: 600px;
+  padding: 10px 0px;
+  width: 514px;
   margin-left: 360px;
   margin-top: 70px;
-  border: 1px solid #cfd8dc;
+  border-bottom: 1px solid #cfd8dc;
+}
+.conteudo .search-bar i {
+  margin-left: 5px;
+  color: #7030A0;
+}
+.conteudo .search-bar input {
+  width: 100%;
+  border: none;
+  appearance: none;
+  outline: none;
+  background: transparent;
+}
+.conteudo .search-bar input::placeholder {
+  opacity: 0.5;
+  color: #85A5C2;
 }
 .conteudo .grid-retangulos {
   display: grid;
@@ -221,7 +235,7 @@
   width: 422px;
   flex-direction: column;
   position: fixed;
-  z-index: 1;
+  z-index: 7;
   top: 0;
   right: 0;
   transition: right 0.3s ease-in-out;
@@ -241,6 +255,18 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: -20px;
+}
+.menu-direita .conteudo-direita__perfil__textos-nome {
+  margin-top: 20px;
+  color: #0E426F;
+}
+.menu-direita .conteudo-direita__perfil__textos-idade {
+  margin-top: -10px;
+  color: #5FA1DA;
+}
+.menu-direita .conteudo-direita__perfil i {
+  color: black;
 }
 .menu-direita .conteudo-direita__sangue {
   display: flex;
@@ -258,28 +284,95 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
   padding: 0 25px;
 }
 .menu-direita .conteudo-direita__sangue-coluna:not(:first-child) {
   border-left: 1px solid #ccc;
-  height: 54px;
 }
 .menu-direita .conteudo-direita__sangue-titulo {
   font-size: 14px;
-  color: #777;
+  color: #588dc1;
+  margin-top: 20px;
+  text-align: center;
+  opacity: 0.7;
 }
 .menu-direita .conteudo-direita__sangue-valor {
   font-size: 18px;
   font-weight: bold;
+  color: #459bd9;
+  margin-top: -30%;
 }
 .menu-direita .conteudo-direita__calendario {
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   margin-top: 20px;
+  text-align: center;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menu-direita .conteudo-direita__calendario-mes {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+}
+.menu-direita .conteudo-direita__calendario-mes-dropdown {
+  border: none;
+  /* Remove a border quando não está selecionado */
+  outline: none;
+  /* Remove a outline quando clicado no botao para dar select*/
+  font-size: 16px;
+  /* Tamanho do texto*/
+  color: #1c3d5a;
+  /* Cor texto*/
+  appearance: none;
+  /* Tira completamente o estilo ao botao*/
+}
+.menu-direita .conteudo-direita__calendario-mes i {
+  color: #1c3d5a;
+  margin-left: -30px;
+}
+.menu-direita .conteudo-direita__calendario-dias {
+  display: flex;
+  flex-direction: nowrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+.menu-direita .conteudo-direita__calendario-coluna {
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 70px;
+  height: 60px;
+}
+.menu-direita .conteudo-direita__calendario-coluna:hover {
+  background-color: #1A79CB;
+}
+.menu-direita .conteudo-direita__calendario-coluna:hover .conteudo-direita__calendario-titulo {
+  color: #ffffff;
+  opacity: 1;
+}
+.menu-direita .conteudo-direita__calendario-coluna:hover .conteudo-direita__calendario-valor {
+  color: #ffffff;
+  opacity: 1;
+}
+.menu-direita .conteudo-direita__calendario-titulo {
+  font-size: 16px;
+  color: #588dc1;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+.menu-direita .conteudo-direita__calendario-valor {
+  font-size: 18px;
+  font-weight: bold;
+  color: #459bd9;
+  margin-top: -5px;
 }
 .menu-direita .conteudo-direita__match {
   background-color: #4263EB;
   color: #fff;
   border-radius: 30px;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -289,6 +382,8 @@
   background-image: url("../img/medal.png");
   background-repeat: no-repeat;
   background-position: 150px 0px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 .menu-direita .conteudo-direita__match-textos {
   display: flex;
@@ -298,6 +393,23 @@
 .menu-direita .conteudo-direita__match h4 {
   margin-top: -10px;
   margin-bottom: -10px;
+}
+.menu-direita .conteudo-direita__match-branco {
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  display: flex;
+  width: 47px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.menu-direita .conteudo-direita__match-branco i {
+  color: #2E45A4;
 }
 .menu-direita .conteudo-direita__match hr {
   width: 90%;
@@ -310,6 +422,9 @@
   justify-content: flex-start;
   padding-left: 15px;
 }
+.menu-direita .conteudo-direita__match-imagens :not(:first-child) {
+  margin-left: -15px;
+}
 .menu-direita .conteudo-direita__health {
   background-color: #E8F1F9;
   height: 182px;
@@ -318,14 +433,67 @@
   background-image: url("../img/caduceus.png");
   background-repeat: no-repeat;
   background-position: 160px 65px;
+  align-items: flex-start;
+  /* Alinha os itens à esquerda */
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+.menu-direita .conteudo-direita__health-title {
+  margin-left: 30px;
+  margin-top: 20px;
+  color: #0E426F;
+}
+.menu-direita .conteudo-direita__health-info {
+  margin-top: -20px;
+  margin-left: 30px;
+  color: #12548D;
+}
+.menu-direita .conteudo-direita__health-info-doctor {
+  margin-top: -10px;
+}
+.menu-direita .conteudo-direita__health-hr {
+  width: 67%;
+  border: none;
+  border-top: 1px solid #93B0C8;
+  opacity: 0.3;
+  margin-left: 30px;
+  margin-top: 0px;
+}
+.menu-direita .conteudo-direita__health-followup {
+  margin-left: 30px;
+  margin-top: 20px;
+  color: #009DDE;
+  appearance: none;
+  text-decoration: none;
+}
+.menu-direita .conteudo-direita__postworkout {
+  color: #0E426F;
 }
 .menu-direita .conteudo-direita__meditation {
   background-color: #E8F1F9;
   border-radius: 20px;
-  margin-bottom: 100px;
+  margin-top: -10px;
   background-image: url("../img/flor.png");
   background-repeat: no-repeat;
-  background-position: 160px 0px;
+  background-position: 170px 55px;
+  display: flex;
+  flex-direction: column;
+}
+.menu-direita .conteudo-direita__meditation-title {
+  margin-left: 30px;
+  margin-top: 30px;
+  color: #0E426F;
+}
+.menu-direita .conteudo-direita__meditation-info {
+  margin-left: 30px;
+  margin-top: -5px;
+  color: #12548D;
+}
+.menu-direita .conteudo-direita__meditation-coach {
+  margin-left: 30px;
+  margin-top: -10px;
+  color: #12548D;
 }
 
 .menu-lateral {
@@ -334,7 +502,7 @@
   width: 112px;
   background-color: #7834a4;
   position: fixed;
-  z-index: 2;
+  z-index: 6;
   top: 0;
   left: 0;
   display: flex;
@@ -419,7 +587,7 @@ body {
   cursor: pointer;
   color: white;
   font-size: 20px;
-  z-index: 1;
+  z-index: 7;
   transition: right 0.3s ease-in-out;
 }
 .botao-seta i {

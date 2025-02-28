@@ -131,8 +131,8 @@
             <div class="conteudo-direita__perfil">
                 <img class="conteudo-direita__perfil__foto" src="img/Mask.png" alt="">
                 <div class="conteudo-direita__perfil__textos">
-                    <p>Isaac Williams</p>
-                    <p>25 years old, London</p>
+                    <p class="conteudo-direita__perfil__textos-nome">Isaac Williams</p>
+                    <p class="conteudo-direita__perfil__textos-idade">25 years old, London</p>
                 </div>
                 <a href="#!">
                     <i class="fa-solid fa-unlock"></i>
@@ -153,8 +153,59 @@
                 </div>
             </div>
             <div class="conteudo-direita__calendario">
-                <img class="conteudo-direita__calendario__imagem" src="img/Group 32.png" alt="">
+                <div class="conteudo-direita__calendario-mes">
+                    <select class="conteudo-direita__calendario-mes-dropdown">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March" selected>March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="conteudo-direita__calendario-dias">
+                    <div class="conteudo-direita__calendario-coluna">
+                        <p class="conteudo-direita__calendario-titulo">Mon</p>
+                        <p class="conteudo-direita__calendario-valor">9</p>
+                    </div>
+                    <div class="conteudo-direita__calendario-coluna">
+                        <p class="conteudo-direita__calendario-titulo">Tues</p>
+                        <p class="conteudo-direita__calendario-valor">10</p>
+                    </div>
+                    <div class="conteudo-direita__calendario-coluna active-day">
+                        <p class="conteudo-direita__calendario-titulo">Wed</p>
+                        <p class="conteudo-direita__calendario-valor">11</p>
+                    </div>
+                    <div class="conteudo-direita__calendario-coluna">
+                        <p class="conteudo-direita__calendario-titulo">Thu</p>
+                        <p class="conteudo-direita__calendario-valor">12</p>
+                    </div>
+                    <div class="conteudo-direita__calendario-coluna">
+                        <p class="conteudo-direita__calendario-titulo">Fri</p>
+                        <p class="conteudo-direita__calendario-valor">13</p>
+                    </div>
+                    <div class="conteudo-direita__calendario-coluna">
+                        <p class="conteudo-direita__calendario-titulo">Sat</p>
+                        <p class="conteudo-direita__calendario-valor">14</p>
+                    </div>
+                    <div class="conteudo-direita__calendario-coluna">
+                        <p class="conteudo-direita__calendario-titulo">Sun</p>
+                        <p class="conteudo-direita__calendario-valor">15</p>
+                    </div>
+                    <div class="conteudo-direita__calendario-coluna disabled-day">
+                        <p class="conteudo-direita__calendario-titulo">Mon</p>
+                        <p class="conteudo-direita__calendario-valor">16</p>
+                    </div>
+                </div>
             </div>
+
             <div class="conteudo-direita__match">
                 <div class="conteudo-direita__match-textos">
                     <h4>Match against Team B</h4>
@@ -180,21 +231,26 @@
                         <img src="img/match5.png" alt="">
                     </div>
                 </div>
+                <div class="conteudo-direita__match-branco">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
 
 
             </div>
             <div class="conteudo-direita__health">
-                <h4>Health appointment</h4>
-                <p>9:00AM - 11:30AM</p>
-                <p>Dr. Douglas Wade</p>
-                <br>
-                <a href="#!">Follow up</a>
+                <h4 class="conteudo-direita__health-title">Health appointment</h4>
+                <div class="conteudo-direita__health-info">
+                    <p class="conteudo-direita__health-info-time">9:00 AM - 11:30 AM</p>
+                    <p class="conteudo-direita__health-info-doctor">Dr. Douglas Wade</p>
+                </div>
+                <hr class="conteudo-direita__health-hr">
+                <a class="conteudo-direita__health-followup" href="#!">Follow up</a>
             </div>
-            <h4>Post workout sessions</h4>
+            <h4 class="conteudo-direita__postworkout">Post workout sessions</h4>
             <div class="conteudo-direita__meditation">
-                <h4>Meditation</h4>
-                <p>5:00PM - 6:00PM</p>
-                <p>Coach : Tim Bjorvick</p>
+                <h4 class="conteudo-direita__meditation-title">Meditation</h4>
+                <p class="conteudo-direita__meditation-info">5:00PM - 6:00PM</p>
+                <p class="conteudo-direita__meditation-coach">Coach : Tim Bjorvick</p>
             </div>
         </div>
     </div>
