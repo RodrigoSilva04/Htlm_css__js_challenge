@@ -3,12 +3,10 @@
 @import './menudireita';
 @import './menuesquerda';
 body{
-    background-color: $background-color;
-    z-index: 0;
-    height: 100%;
+    height: 100vh;
     margin: 0;
-    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $background-color;
 }
 
 

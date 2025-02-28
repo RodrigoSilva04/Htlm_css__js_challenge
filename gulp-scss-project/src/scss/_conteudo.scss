@@ -1,12 +1,10 @@
 .conteudo {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0px 0px 0px 200px;
-    transition: right 0.3s ease-in-out;
-    position: relative;
-    width: 900px;
-    height: 100vh;
+    transition: margin-left 0.3s ease-in-out;
     z-index: 5;
     background-color: $background-color;
+    flex: 1;
+    padding: 10px;
 
     &.fechar {
         margin-left: 112px;

@@ -5,6 +5,7 @@
     height: 100%;
     width: 422px;
     flex-direction: column;
+    flex-shrink: 0;
     position: fixed;
     z-index: 7;
     top: 0;
