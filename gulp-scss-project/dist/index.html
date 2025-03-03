@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <title>Dashboard</title>
 </head>
 
 <body>
-    <div class="menu-lateral fechado">
-        <div class="menu-topo">
+    <div class="menu-left closed">
+        <div class="menu-top">
             <div class="item_menu">
                 <a href="#!">
                     <img src="img/logo-26 1.png" alt="Logo">
@@ -18,7 +19,7 @@
             </div>
             <div class="item_menu">
                 <a href="#!">
-                    <img class="botao-lateral" src="img/angle-double-right.png" alt="">
+                    <img class="button-side" src="img/angle-double-right.png" alt="">
                 </a>
             </div>
         </div>
@@ -47,114 +48,173 @@
                     <span class="item_menu-employees-icon">Employees</span>
                 </a>
             </div>
+        </div>
+        <div class="items_footer">
             <div class="item_menu">
                 <a href="index.php">
                     <i class="fa-solid fa-cog fa-lg"></i>
                     <span class="item_menu-Preferences-icon">Preferences</span>
                 </a>
             </div>
+        </div>
 
-        </div>
     </div>
-    <div class="conteudo">
-        <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search for athlete profile data, workout and meditation sessions">
+    <div class="content">
+        <div class="content-header">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for athlete profile data, workout and meditation sessions">
+            </div>
         </div>
-        <div class="grid-retangulos">
-            <div class="menu-retangulo">
-                <div class="item-menu-retangulo-1">
+        <div class="grid-retangules">
+            <div class="menu-retangule">
+                <div class="item-menu-retangule retangule-blue">
                     <p>Concentration level</p>
                     <h3>Normal</h3>
-                    <div class="grafico-concentracao">
-                        <img src="img/Statistics.png" alt="grafico concentracao">
+                    <div class="graph-concentration">
+                        <img src="img/Statistics.png" alt="graph concentration">
                     </div>
                 </div>
-                <div class="item-menu-retangulo-2">
+                <div class="item-menu-retangule retangule-purple">
                     <p>Brain stress rate</p>
                     <h3>Normal</h3>
-                    <img class="item-menu-retangulo-2-imagem" src="img/brainstress.png" alt="grafico brainstress">
+                    <img class="item-menu-retangule-image" src="img/brainstress.png" alt="graph brainstress">
                 </div>
-                <div class="item-menu-retangulo-3">
+                <div class="item-menu-retangule retangule-red">
                     <p>Brain activity</p>
-                    <div class="grafico-activity">
-                        <img src="img/Chart.png" alt="grafico activity">
+                    <div class="graph-activity">
+                        <img src="img/Chart.png" alt="graph activity">
                     </div>
                 </div>
             </div>
 
-            <div class="menu-ret-branco-grande">
-                <div class="retangulo1">
-                    <p class="retangulo1__text">Resting heart rate</p>
-                    <p class="retangulo1__text">66 bmp (average)</p>
-                    <img class="retangulo1__image" src="img/r1image.png" alt="Imagem 1">
+            <div class="menu-retangule-white-big">
+                <div class="retangule1">
+                    <p class="retangule1__text">Resting heart rate</p>
+                    <p class="retangule1__text">66 bmp (average)</p>
+                    <img class="retangule1__image" src="img/r1image.png" alt="image 1">
                 </div>
-                <div class="retangulo2">
-                    <p class="retangulo2__text">Performance heart rate</p>
-                    <p class="retangulo2__text">143bmp (average)</p>
-                    <img class="retangulo2__image" src="img/r2image.png" alt="Imagem 2">
+                <div class="retangule2">
+                    <p class="retangule2__text">Performance heart rate</p>
+                    <p class="retangule2__text">143bmp (average)</p>
+                    <img class="retangule2__image" src="img/r2image.png" alt="image 2">
                 </div>
             </div>
-            <div class="menu-ret-branco-pequeno">
-                <div class="retangulo3">
-                    <div class="retangulo3__textos">
-                        <p class="retangulo3__text">Running sessions</p>
-                        <p class="retangulo3__text">Excellent</p>
-                        <p class="retangulo3__text"></p>
+            <div class="menu-retangule-white-small">
+                <div class="menu-retangule-white-small-item retangule-left">
+                    <div class="retangule-left__texts">
+                        <p class="retangule-left__text">Running sessions</p>
+                        <p class="retangule-left__text">Excellent</p>
+                        <p class="retangule-left__text"></p>
                     </div>
-                    <div class="retangulo3__imagens">
-                        <img src="img/Kilometers.png" alt="Imagem 3">
-                        <img src="img/Hours.png" alt="Imagem 4">
-                        <img src="img/Speed.png" alt="Imagem 5">
+                    <div class="retangule-left__images">
+                        <div class="retangule-left__images-kilometers">
+                            <div class="retangule-left__images-kilometers-image-out">
+                                <img class="retangule-left__images-kilometers-image-inside" src="img/kilometers.png"
+                                    alt="image 3">
+                            </div>
+                            <div class="retangule-left__images-kilometers-texts">
+                                <p class="retangule-left__images-kilometers-texts-number">10.64</p>
+                                <p class="retangule-left__images-kilometers-texts-text">Kilometers</p>
+                            </div>
+                        </div>
+                        <div class="retangule-left__images-hours">
+                            <div class="retangule-left__images-hours-image-out">
+                                <img class="retangule-left__images-hours-image-inside" src="img/hours.png" alt="image 3">
+                            </div>
+                            <div class="retangule-left__images-hours-texts">
+                                <p class="retangule-left__images-hours-texts-number">1.48</p>
+                                <p class="retangule-left__images-hours-texts-text">Hours</p>
+                            </div>
+                        </div>
+                        <div class="retangule-left__images-speed">
+                            <div class="retangule-left__images-speed-image-out">
+                                <img class="retangule-left__images-speed-image-inside" src="img/speed.png" alt="image 3">
+                            </div>
+                            <div class="rentagule__images-speed-texts">
+                                <p class="retangule-left__images-speed-texts-number">5.25</p>
+                                <p class="retangule-left__images-speed-texts-text">speed</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="menu-retangule-white-small-item retangule-right">
+                    <div class="retangule-right__texts">
+                        <p class="retangule-right__text">Post workout session</p>
+                        <p class="retangule-right__text">Excellent</p>
+                    </div>
+                    <div class="retangule-right__images">
+                        <div class="retangule-right__images-stretching">
+                            <div class="retangule-right__images-stretching-image-out">
+                                <img class="retangule-right__images-stretching-image-inside" src="img/Stretching.png"
+                                    alt="image 4">
+                            </div>
+                            <div class="retangule-right__images-stretching-texts">
+                                <p class="retangule-right__images-stretching-texts-number">48min</p>
+                                <p class="retangule-right__images-stretching-texts-text">Stretching</p>
+                            </div>
+                        </div>
+                        <div class="retangule-right__images-mind">
+                            <div class="retangule-right__images-mind-image-out">
+                                <img class="retangule-right__images-mind-image-inside" src="img/mind.png"
+                                    alt="image 4">
+                            </div>
+                            <div class="retangule-right__images-mind-texts">
+                                <p class="retangule-right__images-mind-texts-number">32min</p>
+                                <p class="retangule-right__images-mind-texts-text">Mind Training</p>
+                            </div>
+                        </div>
+                        <div class="retangule-right__images-meditation">
+                            <div class="retangule-right__images-meditation-image-out">
+                                <img class="retangule-right__images-meditation-image-inside" src="img/meditation.png"
+                                    alt="image 4">
+                            </div>
+                            <div class="retangule-right__images-meditation-texts">
+                                <p class="retangule-right__images-meditation-texts-number">1.0h</p>
+                                <p class="retangule-right__images-meditation-texts-text">Meditation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                </div>
-                <div class="retangulo4">
-                    <div class="retangulo4__textos">
-                        <p class="retangulo4__text">Post workout session</p>
-                        <p class="retangulo4__text">Excellent</p>
-                    </div>
-                    <div class="retangulo4__imagens">
-                        <img src="img/Stretching.png" alt="Imagem 3">
-                        <img src="img/Mind training.png" alt="Imagem 4">
-                        <img src="img/Meditation.png" alt="Imagem 5">
-                    </div>
-                </div>
-            </div>
         </div>
+
     </div>
-    <div class="botao-seta">
+    </div>
+    </div>
+    <div class="button-arrow">
         <i class="fa fa-angle-right" aria-hidden="true"></i>
     </div>
-    <div class="menu-direita aberto">
-        <div class="conteudo-direita">
-            <div class="conteudo-direita__perfil">
-                <img class="conteudo-direita__perfil__foto" src="img/Mask.png" alt="">
-                <div class="conteudo-direita__perfil__textos">
-                    <p class="conteudo-direita__perfil__textos-nome">Isaac Williams</p>
-                    <p class="conteudo-direita__perfil__textos-idade">25 years old, London</p>
+    <div class="menu-right">
+        <div class="content-right">
+            <div class="content-right__profile">
+                <img class="content-right__profile__photo" src="img/Mask.png" alt="">
+                <div class="content-right__profile__texts">
+                    <p class="content-right__profile__texts-name">Isaac Williams</p>
+                    <p class="content-right__profile__texts-age">25 years old, London</p>
                 </div>
                 <a href="#!">
                     <i class="fa-solid fa-unlock"></i>
                 </a>
             </div>
-            <div class="conteudo-direita__sangue">
-                <div class="conteudo-direita__sangue-coluna">
-                    <p class="conteudo-direita__sangue-titulo">Blood</p>
-                    <p class="conteudo-direita__sangue-valor">O+</p>
+            <div class="content-right__blood">
+                <div class="content-right__blood-column">
+                    <p class="content-right__blood-title">Blood</p>
+                    <p class="content-right__blood-value">O+</p>
                 </div>
-                <div class="conteudo-direita__sangue-coluna">
-                    <p class="conteudo-direita__sangue-titulo">Height</p>
-                    <p class="conteudo-direita__sangue-valor">186cm</p>
+                <div class="content-right__blood-column">
+                    <p class="content-right__blood-title">Height</p>
+                    <p class="content-right__blood-value">186cm</p>
                 </div>
-                <div class="conteudo-direita__sangue-coluna">
-                    <p class="conteudo-direita__sangue-titulo">Weight</p>
-                    <p class="conteudo-direita__sangue-valor">90kg</p>
+                <div class="content-right__blood-column">
+                    <p class="content-right__blood-title">Weight</p>
+                    <p class="content-right__blood-value">90kg</p>
                 </div>
             </div>
-            <div class="conteudo-direita__calendario">
-                <div class="conteudo-direita__calendario-mes">
-                    <select class="conteudo-direita__calendario-mes-dropdown">
+            <div class="content-right__calendary">
+                <div class="content-right__calendary-month">
+                    <select class="content-right__calendary-month-dropdown">
                         <option value="January">January</option>
                         <option value="February">February</option>
                         <option value="March" selected>March</option>
@@ -170,87 +230,87 @@
                     </select>
                     <i class="fa-solid fa-arrow-down"></i>
                 </div>
-                <div class="conteudo-direita__calendario-dias">
-                    <div class="conteudo-direita__calendario-coluna">
-                        <p class="conteudo-direita__calendario-titulo">Mon</p>
-                        <p class="conteudo-direita__calendario-valor">9</p>
+                <div class="content-right__calendary-days">
+                    <div class="content-right__calendary-column">
+                        <p class="content-right__calendary-title">Mon</p>
+                        <p class="content-right__calendary-value">9</p>
                     </div>
-                    <div class="conteudo-direita__calendario-coluna">
-                        <p class="conteudo-direita__calendario-titulo">Tues</p>
-                        <p class="conteudo-direita__calendario-valor">10</p>
+                    <div class="content-right__calendary-column">
+                        <p class="content-right__calendary-title">Tues</p>
+                        <p class="content-right__calendary-value">10</p>
                     </div>
-                    <div class="conteudo-direita__calendario-coluna active-day">
-                        <p class="conteudo-direita__calendario-titulo">Wed</p>
-                        <p class="conteudo-direita__calendario-valor">11</p>
+                    <div class="content-right__calendary-column active-day">
+                        <p class="content-right__calendary-title">Wed</p>
+                        <p class="content-right__calendary-value">11</p>
                     </div>
-                    <div class="conteudo-direita__calendario-coluna">
-                        <p class="conteudo-direita__calendario-titulo">Thu</p>
-                        <p class="conteudo-direita__calendario-valor">12</p>
+                    <div class="content-right__calendary-column">
+                        <p class="content-right__calendary-title">Thu</p>
+                        <p class="content-right__calendary-value">12</p>
                     </div>
-                    <div class="conteudo-direita__calendario-coluna">
-                        <p class="conteudo-direita__calendario-titulo">Fri</p>
-                        <p class="conteudo-direita__calendario-valor">13</p>
+                    <div class="content-right__calendary-column">
+                        <p class="content-right__calendary-title">Fri</p>
+                        <p class="content-right__calendary-value">13</p>
                     </div>
-                    <div class="conteudo-direita__calendario-coluna">
-                        <p class="conteudo-direita__calendario-titulo">Sat</p>
-                        <p class="conteudo-direita__calendario-valor">14</p>
+                    <div class="content-right__calendary-column">
+                        <p class="content-right__calendary-title">Sat</p>
+                        <p class="content-right__calendary-value">14</p>
                     </div>
-                    <div class="conteudo-direita__calendario-coluna">
-                        <p class="conteudo-direita__calendario-titulo">Sun</p>
-                        <p class="conteudo-direita__calendario-valor">15</p>
+                    <div class="content-right__calendary-column">
+                        <p class="content-right__calendary-title">Sun</p>
+                        <p class="content-right__calendary-value">15</p>
                     </div>
-                    <div class="conteudo-direita__calendario-coluna disabled-day">
-                        <p class="conteudo-direita__calendario-titulo">Mon</p>
-                        <p class="conteudo-direita__calendario-valor">16</p>
+                    <div class="content-right__calendary-column disabled-day">
+                        <p class="content-right__calendary-title">Mon</p>
+                        <p class="content-right__calendary-value">16</p>
                     </div>
                 </div>
             </div>
 
-            <div class="conteudo-direita__match">
-                <div class="conteudo-direita__match-textos">
+            <div class="content-right__match">
+                <div class="content-right__match-texts">
                     <h4>Match against Team B</h4>
                     <p>9:00AM - 11:30AM</p>
                     <p>Coach: Nelson Hendricks</p>
                 </div>
 
                 <hr>
-                <div class="conteudo-direita__match-imagens">
-                    <div class="conteudo-direita__match__imagens__imagem">
+                <div class="content-right__match-images">
+                    <div class="content-right__match__images__image">
                         <img src="img/match1.png" alt="">
                     </div>
-                    <div class="conteudo-direita__match__imagens__imagem">
+                    <div class="content-right__match__images__image">
                         <img src="img/match2.png" alt="">
                     </div>
-                    <div class="conteudo-direita__match__imagens__imagem">
+                    <div class="content-right__match__images__image">
                         <img src="img/match3.png" alt="">
                     </div>
-                    <div class="conteudo-direita__match__imagens__imagem">
+                    <div class="content-right__match__images__image">
                         <img src="img/match4.png" alt="">
                     </div>
-                    <div class="conteudo-direita__match__imagens__imagem">
+                    <div class="content-right__match__images__image">
                         <img src="img/match5.png" alt="">
                     </div>
                 </div>
-                <div class="conteudo-direita__match-branco">
+                <div class="content-right__match-white">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
 
 
             </div>
-            <div class="conteudo-direita__health">
-                <h4 class="conteudo-direita__health-title">Health appointment</h4>
-                <div class="conteudo-direita__health-info">
-                    <p class="conteudo-direita__health-info-time">9:00 AM - 11:30 AM</p>
-                    <p class="conteudo-direita__health-info-doctor">Dr. Douglas Wade</p>
+            <div class="content-right__health">
+                <h4 class="content-right__health-title">Health appointment</h4>
+                <div class="content-right__health-info">
+                    <p class="content-right__health-info-time">9:00 AM - 11:30 AM</p>
+                    <p class="content-right__health-info-doctor">Dr. Douglas Wade</p>
                 </div>
-                <hr class="conteudo-direita__health-hr">
-                <a class="conteudo-direita__health-followup" href="#!">Follow up</a>
+                <hr class="content-right__health-hr">
+                <a class="content-right__health-followup" href="#!">Follow up</a>
             </div>
-            <h4 class="conteudo-direita__postworkout">Post workout sessions</h4>
-            <div class="conteudo-direita__meditation">
-                <h4 class="conteudo-direita__meditation-title">Meditation</h4>
-                <p class="conteudo-direita__meditation-info">5:00PM - 6:00PM</p>
-                <p class="conteudo-direita__meditation-coach">Coach : Tim Bjorvick</p>
+            <h4 class="content-right__postworkout">Post workout sessions</h4>
+            <div class="content-right__meditation">
+                <h4 class="content-right__meditation-title">Meditation</h4>
+                <p class="content-right__meditation-info">5:00PM - 6:00PM</p>
+                <p class="content-right__meditation-coach">Coach : Tim Bjorvick</p>
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-.menu-lateral{
+.menu-left{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100%;
     width: 112px;
@@ -13,12 +13,12 @@
     justify-content: space-between;
     border-radius: 0 20px 20px 0;
 
-    &.aberto{
+    &.open{
         width: 212px;
         transition: width 0.3s ease-in-out;
     }
 
-    .menu-topo{
+    .menu-top{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -37,6 +37,8 @@
         flex-direction: column;
         color: $primary-color;
         padding: 10px;
+        flex: 1;
+        margin-top: 100px;
         
 
     
@@ -55,7 +57,7 @@
             span{
                 display: none;
 
-                &.aberto{
+                &.open{
                     display: inline-block;
                     transition: display 0.3s ease-in-out;
                     color: white;
@@ -64,14 +66,37 @@
                 }
             }
         }
-        .item_menu:last-child{
-            align-self: center;
-            margin-top: 400px;
+
+    }
+    .items_footer{
+        margin-bottom: 32px;
+
+        .item_menu{
+            color: rgb(255, 255, 255);
+            padding: 8px;
+
+
+            &:hover{
+                background-color: $menubackground;
+                border-radius: 12px;
+                color: $menucolor;
+            }
+            i{
+                color: $primary-color;
+            }
+
+            span{
+                display: none;
+
+                &.open{
+                    display: inline-block;
+                    transition: display 0.3s ease-in-out;
+                    color: white;
+                    text-size-adjust: 20px;
+                    margin-left: 10px;
+                }
+            }
         }
-        .item_menu:nth-child(1){
-            margin-top: 050px;
-        }
-        
     }
     
     

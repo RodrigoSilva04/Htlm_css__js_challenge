@@ -1,33 +1,29 @@
 // Selecionar os elementos
-let menu = document.querySelector('.menu-direita');
-let botao = document.querySelector('.botao-seta');
-let conteudo = document.querySelector('.conteudo');
-let menuLateral = document.querySelector('.menu-lateral');
-let botaoLateral = document.querySelector('.botao-lateral');
+let menu = document.querySelector('.menu-right');
+let botao = document.querySelector('.button-arrow');
+let content = document.querySelector('.content');
+let menuLateral = document.querySelector('.menu-left');
+let botaoLateral = document.querySelector('.button-side');
 let spans = document.querySelectorAll('.items_menu span'); // Todos os spans dentro do menu
 
 
-// Função para alternar a barra (abrir/fechar)
+// Função para alternar a barra (open/close)
 function toggleBarra() {
-    menu.classList.toggle('fechar'); // Alterna entre aberto e fechado
-    botao.classList.toggle('fechar'); // Alterna entre aberto e fechado
-    conteudo.classList.toggle('fechar'); // Alterna entre aberto e fechado
+    menu.classList.toggle('close'); // Alterna entre open e closed
+    botao.classList.toggle('close'); // Alterna entre open e closed
+    content.classList.toggle('close'); // Alterna entre open e closed
     console.log('Cliquei no botão!'); // Mostra no console que o botão foi clicado
 }
 
 function toggleMenuLateral() {
-    menuLateral.classList.toggle('aberto'); // Alterna entre aberto e fechado
-    botaoLateral.classList.toggle('aberto'); // Alterna entre aberto e fechado
+    menuLateral.classList.toggle('open'); // Alterna entre open e closed
+    botaoLateral.classList.toggle('open'); // Alterna entre open e closed
+    content.classList.toggle('open'); // Alterna entre open e closed
     spans.forEach((span) => {
-        span.classList.toggle('aberto');
+        span.classList.toggle('open');
     });
-    span.classList.toggle('aberto');
+    span.classList.toggle('open');
     document.querySelector('.item_menu a').removeAttribute('href');
-    if(conteudo.classList.contains('aberto')) {
-        conteudo.classList.remove('aberto');
-    }else {
-        conteudo.classList.add('aberto');
-    }
     console.log('Cliquei no botão menulateral!'); // Mostra no console que o botão foi clicado
 }
 

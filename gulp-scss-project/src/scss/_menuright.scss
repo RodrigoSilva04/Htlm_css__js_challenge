@@ -1,29 +1,29 @@
-.menu-direita {
+.menu-right {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: $primary-color;
     display: flex;
     height: 100%;
     width: 422px;
     flex-direction: column;
-    flex-shrink: 0;
     position: fixed;
     z-index: 7;
     top: 0;
     right: 0;
     transition: right 0.3s ease-in-out;
 
-    &.fechar {
+    &.close {
         right: -422px;
     }
 
-    .conteudo-direita {
+    .content-right {
         padding: 50px;
         width: 308px;
         margin-left: 10px;
         margin-top: 0px;
         margin-bottom: 10px;
+        overflow: scroll;
 
-        &__perfil {
+        &__profile {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -31,12 +31,12 @@
             margin-top: -20px;
 
 
-            &__textos-nome {
+            &__texts-name {
                 margin-top: 20px;
                 color: #0E426F;
             }
 
-            &__textos-idade {
+            &__texts-age {
                 margin-top: -10px;
                 color: #5FA1DA;
             }
@@ -47,7 +47,7 @@
         }
 
 
-        &__sangue {
+        &__blood {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -58,7 +58,7 @@
             text-align: center;
             margin-top: 20px;
 
-            &-coluna {
+            &-column {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -72,7 +72,7 @@
             }
 
 
-            &-titulo {
+            &-title {
                 font-size: 14px;
                 color: #588dc1;
                 margin-top: 20px;
@@ -80,7 +80,7 @@
                 opacity: 0.7;
             }
 
-            &-valor {
+            &-value {
                 font-size: 18px;
                 font-weight: bold;
                 color: #459bd9;
@@ -88,17 +88,17 @@
             }
         }
 
-        &__calendario {
+        &__calendary {
             background-color: $primary-color;
             margin-top: 20px;
             text-align: center;
             max-width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 32px;
+            margin-bottom: 32px;
 
 
 
-            &-mes {
+            &-month {
                 font-size: 16px;
                 display: flex;
                 flex-direction: row;
@@ -109,9 +109,9 @@
                     outline: none;
                     /* Remove a outline quando clicado no botao para dar select*/
                     font-size: 16px;
-                    /* Tamanho do texto*/
+                    /* Tamanho do text*/
                     color: #1c3d5a;
-                    /* Cor texto*/
+                    /* Cor text*/
                     appearance: none;
                     /* Tira completamente o estilo ao botao*/
                 }
@@ -122,7 +122,7 @@
                 }
             }
 
-            &-dias {
+            &-days {
                 display: flex;
                 flex-direction: nowrap;
                 justify-content: space-between;
@@ -130,7 +130,7 @@
             }
 
 
-            &-coluna {
+            &-column {
                 display: flex;
                 flex-direction: column;
                 border-radius: 30px;
@@ -141,24 +141,24 @@
                     background-color: #1A79CB;
             
 
-                    .conteudo-direita__calendario-titulo {
+                    .content-right__calendary-title {
                         color: #ffffff;
                         opacity: 1;
-                    }.conteudo-direita__calendario-valor {
+                    }.content-right__calendary-value {
                         color: #ffffff;
                         opacity: 1;
                     }
                 }
             }
 
-            &-titulo {
+            &-title {
                 font-size: 16px;
                 color: #588dc1;
                 opacity: 0.7;
                 margin-top: 5px;
             }
 
-            &-valor {
+            &-value {
                 font-size: 18px;
                 font-weight: bold;
                 color: #459bd9;
@@ -181,11 +181,11 @@
             background-image: url('../img/medal.png');
             background-repeat: no-repeat;
             background-position: 150px 00px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); // Sombra leve para destacar
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); // Sombra leve para destacar
             overflow: hidden;
 
     
-            &-textos {
+            &-texts {
                 display: flex;
                 flex-direction: column;
                 margin-left: 20px;
@@ -196,18 +196,18 @@
                 margin-bottom: -10px;
             }
 
-            &-branco {
+            &-white {
                 background-color: $primary-color;
                 border-top-left-radius: 20px;
                 display: flex;
                 width: 47px;
                 height: 40px;
                 align-items: center;
-                justify-content: center; // Center the icon inside
-                position: absolute; // Ensures it stays inside the parent
-                right: 0px; // Adjust as needed
-                bottom: 0px; // Adjust as needed
-                z-index: 1; // Keep it above other elements
+                justify-content: center;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                z-index: 1;
                 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 
                 i {
@@ -224,7 +224,7 @@
                 border-top: 1px solid rgba(255, 255, 255, 0.5);
             }
 
-            &-imagens {
+            &-images {
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
@@ -250,6 +250,7 @@
             display: flex;
             flex-direction: column;
             font-size: 15px;
+            margin-bottom: 32px;
 
 
 

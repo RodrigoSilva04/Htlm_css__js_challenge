@@ -1,17 +1,24 @@
 @import './variables';
-@import './conteudo';
-@import './menudireita';
-@import './menuesquerda';
+@import './content';
+@import './menuright';
+@import './menuleft';
 body{
     height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: $background-color;
+
+    &:has(.menu-right:not(.close)){
+        .content{
+            margin-right: 422px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
 }
 
 
 
-.botao-seta {
+.button-arrow {
     background-color: rgb(253, 253, 253);
     height: 100px;
     width: 80px;
@@ -32,7 +39,7 @@ body{
         color: purple;
         margin-right: 37px;
     }
-    &.fechar{
+    &.close{
         right: -30px;
 
         i{
